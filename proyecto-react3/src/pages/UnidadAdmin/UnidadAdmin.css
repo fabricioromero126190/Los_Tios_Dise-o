@@ -1,0 +1,93 @@
+.contenedor-unidad {
+  width: 100%;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-principal {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(#0d5f92, #003b60);
+  letter-spacing: 0.5px;
+}
+
+/* Contenedor de la tabla */
+.tabla-contenedor {
+  width: 92%;
+  height: 330px;
+  margin: 20px auto;
+  overflow-y: auto;
+  border: 1px solid #555;
+  background: white;
+}
+
+/* Tabla */
+.tabla-unidad {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Encabezados */
+.tabla-unidad th {
+  background: #00416d !important;
+  color: white !important;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #222;
+}
+
+/* Datos */
+.tabla-unidad td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #777;
+  color: #003b60;
+  font-size: 12px;
+  font-weight: normal;
+  background: white !important;
+}
+
+.tabla-unidad tr:hover td {
+  background: #dbeafe !important;
+  cursor: pointer;
+}
+
+.fila-seleccionada td {
+  background: #93c5fd !important;
+  color: #003b60;
+  font-weight: bold;
+}
+
+/* Botones */
+.botones {
+  width: 92%;
+  margin: 15px auto;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #777;
+  background: #eeeeee;
+}
+
+.botones button {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  border: 1px solid #002c47;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background: linear-gradient(#1278b8, #005b90);
+}

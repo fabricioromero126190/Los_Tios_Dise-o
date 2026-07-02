@@ -1,0 +1,101 @@
+.objgasto-page {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.objgasto-panel {
+  width: 100%;
+  background: white;
+  border: 1px solid #777;
+}
+
+.objgasto-header {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.objgasto-busqueda {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+}
+
+.objgasto-busqueda input {
+  width: 190px;
+  padding: 8px;
+  border: 1px solid #555;
+  background: #3a3a3a;
+  color: white;
+  font-size: 12px;
+}
+
+.objgasto-busqueda input::placeholder {
+  color: #bdbdbd;
+}
+
+.objgasto-busqueda button,
+.botones-panel button {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  border: 1px solid #002c47;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.objgasto-busqueda button:hover,
+.botones-panel button:hover {
+  background: linear-gradient(#1278b8, #005b90);
+}
+
+.objgasto-tabla th {
+  background: #00416d !important;
+  color: white !important;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #222;
+}
+
+.objgasto-tabla td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #777;
+  color: #003b60;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.objgasto-tabla tr:hover td {
+  background: #dbeafe !important;
+  cursor: pointer;
+}
+
+.fila-seleccionada td {
+  background: #93c5fd !important;
+  color: #003b60;
+  font-weight: bold;
+}
+
+.botones-panel {
+  width: 92%;
+  margin: 15px auto;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #777;
+  background: #eeeeee;
+}
