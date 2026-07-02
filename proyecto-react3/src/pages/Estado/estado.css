@@ -1,0 +1,211 @@
+.estado-page {
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.estado-panel {
+  width: 760px;
+  background: white;
+  border: 1px solid #777;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.estado-header {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.estado-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 10px 8px 10px;
+}
+
+.estado-formulario input {
+  width: 260px;
+  padding: 8px;
+  border: 1px solid #555;
+  background: #3a3a3a;
+  color: white;
+  font-size: 12px;
+}
+
+.estado-formulario input::placeholder {
+  color: #bdbdbd;
+}
+
+.estado-formulario button,
+.estado-busqueda button,
+.botones-panel button {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  border: 1px solid #002c47;
+  padding: 7px 18px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.estado-formulario button:hover,
+.estado-busqueda button:hover,
+.botones-panel button:hover {
+  background: linear-gradient(#1278b8, #005b90);
+}
+
+.estado-busqueda {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 12px;
+}
+
+.estado-busqueda input {
+  width: 180px;
+  padding: 7px;
+  border: 1px solid #555;
+  font-size: 12px;
+}
+
+.tabla-contenedor {
+  width: 92%;
+  height: 300px;
+  margin: 0 auto;
+  overflow-y: auto;
+  border: 1px solid #555;
+  background: white;
+}
+
+.estado-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.estado-tabla th {
+  background: #003b60;
+  color: white;
+  padding: 9px;
+  border: 1px solid #222;
+  font-size: 12px;
+  text-align: center;
+}
+
+.estado-tabla td {
+  height: 28px;
+  padding: 6px;
+  border: 1px solid #777;
+  text-align: center;
+  font-size: 12px;
+  color: #5f6b7a;
+}
+
+.estado-tabla tr {
+  cursor: pointer;
+}
+
+.estado-tabla tr:hover {
+  background: #dbeafe;
+}
+
+.fila-seleccionada {
+  background: #93c5fd !important;
+  font-weight: bold;
+}
+
+.botones-panel {
+  width: 92%;
+  margin: 15px auto;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #777;
+  background: #eeeeee;
+}
+
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modal-caja {
+  width: 380px;
+  background: white;
+  border: 1px solid #555;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+}
+
+.modal-header {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.modal-formulario {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-formulario label {
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+}
+
+.modal-formulario input {
+  padding: 9px;
+  border: 1px solid #555;
+  font-size: 13px;
+}
+
+.modal-botones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+}
+
+.modal-botones button {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  border: 1px solid #002c47;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-botones button:hover {
+  background: linear-gradient(#1278b8, #005b90);
+}
+
+.modal-texto {
+  text-align: center;
+  padding: 20px 20px 5px 20px;
+  font-size: 14px;
+  color: #333;
+}
