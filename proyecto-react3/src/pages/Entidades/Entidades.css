@@ -1,0 +1,279 @@
+.entidades-page {
+  min-height: 100vh;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.entidades-page,
+.entidades-panel,
+.contenedor-entidades {
+  background: white !important;
+}
+.entidades-panel {
+  width: 980px;
+  background: white;
+  border: 1px solid #777;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.entidades-header {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.entidades-busqueda {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 10px 12px 10px;
+}
+
+.entidades-busqueda input {
+  width: 180px;
+  padding: 7px;
+  border: 1px solid #555;
+  font-size: 12px;
+}
+
+.entidades-busqueda button,
+.botones-panel button {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  border: 1px solid #002c47;
+  padding: 7px 18px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.entidades-busqueda button:hover,
+.botones-panel button:hover {
+  background: linear-gradient(#1278b8, #005b90);
+}
+
+.tabla-contenedor {
+  width: 94%;
+  height: 330px;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1px solid #555;
+  background: white;
+}
+
+.entidades-tabla {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.entidades-tabla th {
+  background: #003b60;
+  color: white;
+  padding: 9px;
+  border: 1px solid #222;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.entidades-tabla td {
+  height: 28px;
+  padding: 6px;
+  border: 1px solid #777;
+  text-align: center;
+  font-size: 12px;
+  color: #5f6b7a;
+}
+
+.entidades-tabla tr {
+  cursor: pointer;
+}
+
+.entidades-tabla tr:hover {
+  background: #dbeafe;
+}
+
+.fila-seleccionada {
+  background: #93c5fd !important;
+  font-weight: bold;
+}
+
+.botones-panel {
+  width: 94%;
+  margin: 15px auto;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #777;
+  background: #eeeeee;
+}
+
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modal-caja {
+  width: 380px;
+  background: white;
+  border: 1px solid #555;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+}
+
+.modal-caja-entidades {
+  width: 680px;
+}
+
+.modal-header {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.modal-formulario {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.entidades-formulario-modal {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  gap: 10px 12px;
+}
+
+.modal-formulario label {
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+}
+
+.modal-formulario input {
+  padding: 9px;
+  border: 1px solid #555;
+  font-size: 13px;
+}
+
+.modal-formulario input:disabled {
+  background: #e5e5e5;
+  color: #555;
+}
+
+.modal-botones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+}
+
+.entidades-modal-botones {
+  grid-column: 1 / -1;
+  padding-bottom: 0;
+}
+
+.modal-botones button {
+  background: linear-gradient(#0d5f92, #003b60);
+  color: white;
+  border: 1px solid #002c47;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-botones button:hover {
+  background: linear-gradient(#1278b8, #005b90);
+}
+
+.modal-texto {
+  text-align: center;
+  padding: 20px 20px 5px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 760px) {
+  .entidades-panel {
+    width: 96%;
+  }
+
+  .entidades-busqueda,
+  .botones-panel {
+    flex-wrap: wrap;
+  }
+
+  .modal-caja-entidades {
+    width: 92%;
+  }
+
+  .entidades-formulario-modal {
+    grid-template-columns: 1fr;
+  }
+}
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.modal-caja {
+  width: 420px;
+  max-height: 90vh;
+
+  background: white;
+  border: 1px solid #444;
+
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.modal-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px;
+}
+
+.modal-formulario input {
+  width: 220px;
+  height: 35px;
+}
