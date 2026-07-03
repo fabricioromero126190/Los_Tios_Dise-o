@@ -7,7 +7,7 @@ import {
   actualizarEntidad,
   eliminarEntidad,
   existeEntidad,
-} from "../../services/EntidadesService";
+} from "../../service/EntidadesService";
 
 import "./Entidades.css";
 

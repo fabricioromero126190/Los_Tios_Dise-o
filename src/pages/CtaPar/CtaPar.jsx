@@ -5,7 +5,7 @@ import {
   guardarCtaPar,
   actualizarCtaPar,
   eliminarCtaPar,
-} from "../../services/ctaParService";
+} from "../../service/ctaParService";
 import "./CtaPar.css";
 
 const estadoInicial = {

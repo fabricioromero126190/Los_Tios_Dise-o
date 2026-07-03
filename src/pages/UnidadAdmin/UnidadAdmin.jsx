@@ -4,7 +4,7 @@ import {
   crearUnidad,
   actualizarUnidad,
   eliminarUnidad,
-} from "../../services/unidadAdminService";
+} from "../../service/unidadAdminService";
 import "./UnidadAdmin.css";
 
 function UnidadAdmin() {

@@ -5,7 +5,7 @@ import {
   guardarEstado,
   actualizarEstado,
   eliminarEstado,
-} from "../../services/estadoService";
+} from "../../service/estadoService";
 
 import "./estado.css";
 

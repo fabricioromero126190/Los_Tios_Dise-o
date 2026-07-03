@@ -5,7 +5,7 @@ import {
   guardarObjGasto,
   actualizarObjGasto,
   eliminarObjGasto,
-} from "../../services/objGastoService";
+} from "../../service/objGastoService";
 
 import "./ObjGasto.css";
 

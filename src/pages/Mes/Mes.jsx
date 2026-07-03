@@ -5,7 +5,7 @@ import {
   guardarMes,
   actualizarMes,
   eliminarMes,
-} from "../../services/mesServices";
+} from "../../service/mesService";
 import "./mes.css";
 
 function Mes() {
